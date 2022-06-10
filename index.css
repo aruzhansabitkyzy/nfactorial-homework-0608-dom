@@ -1,0 +1,114 @@
+.video1 {
+    height: 85%;
+    width: 100%;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.background-video {
+    position: fixed;
+    z-index: -1;
+}
+.fa {
+    cursor: pointer;
+}
+.window {
+    position: relative;
+}
+.player {
+    display: flex;
+    align-self: center;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    margin-top: 5%;
+    box-shadow:  0px 0px 2px 3px rgba(169, 171, 170, 0.3);
+    align-items: center;
+    justify-content: center; 
+    background-color: rgba(255,255,255,0.6);
+    width: 40vw;
+    height:80vh;
+    border-radius: 10%;
+}
+.backward {
+    transform: scaleX(-1);
+} 
+.play-pause , .prev, .next {
+    cursor:pointer;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 10%;
+}
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.music {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.music-photo {
+    border-radius:50%;
+    opacity: 1.4;
+}
+.photo {
+    position: relative;
+}
+.progress-bar {
+    position: absolute;
+    width: 266px;
+    height: 266px;
+    border: 2px solid #c6c8cc;
+    border-radius: 50%;
+}
+.location { 
+    width: 15px;
+    height: 15px;
+    z-index: 10;
+    background-color: #94b1eb;
+    box-shadow: 0px 0px 5px #bec4c0;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.timeline {
+    display: flex;
+    justify-content: space-between;
+}
+#startTime , #endTime{
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+}
+#name {
+    font-family: 'Quicksand', 'sans-serif';
+    font-size: 15px;
+}
+#author {
+    font-family: 'Quicksand', 'sans-serif';
+    font-size: 20px;
+    font-weight: bold;
+}
+.music-name {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.music-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}

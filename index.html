@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="window">
+        <div class="background-video">
+            <video src="./assets/Pexels Videos 2335977.mp4" loop autoplay muted class="video1"></video>
+        </div>
+        <div class="player">
+            <div class="container">
+                <div class="timeline">
+                    <div class="start"><p id="startTime">0:00</p></div>
+                    <div class="end"><p id="endTime">3:18</p></div>
+                </div> 
+                <div class="location"></div>
+                <div class="music-container">
+                    <div class="music">
+                        <div class="photo">
+                             <img src="./assets/conan-gray-kid-krow-album-artwork-1578676640453.webp" class="music-photo" width="250px">
+                        </div>
+                        
+                        <div class="progress-bar"></div>
+                        <audio src="./music/Conan Gray - Heather.mp3" id="audio"></audio>
+                        
+                    </div>
+                    <div class="music-name">
+                        <div class="name"><span id="name">Heather</span></div>
+                        <div class="author"><span id="author">Conan Grey</span></div>
+                   </div>
+                </div>
+                
+                <div class="buttons">
+                        <div class="prev">
+                            <img src="./assets/fast-forward.png" width="40px" class="backward">
+                        </div>
+                        <div class="play-pause">
+                            <img src="./assets/free-icon-play-button-153752.png" width="34px" class="play">
+                            <!-- <img src="./assets/pause.png" width="39px"> -->
+                        </div>
+                        <div class="next">
+                            <img src="./assets/fast-forward.png" width="40px" class="forward">
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./index.js"></script>
+</html>
